@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" data-th-href="@{'css/output.css'}"/>
     <style>
         .container {
             margin: auto;
@@ -14,16 +17,21 @@
     </style>
 </head>
 <body>
-<div>
-    <h1 data-th-text="${name}">Welcome to home page</h1>
-    <a th:href="${github}">Clic here to open</a>
+    <div class="bg-gray-200 w-1/2 p-4 flex flex-col justify-center items-center space-y-3 mx-auto mt-4">
+        <h1 class="text-2xl font-bold" data-th-text="${name}">Welcome to home page</h1>
+        <a data-th-href="${github}">Click here to open</a>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut atque deleniti quas eum tempora perferendis
-        assumenda qui molestiae animi laboriosam, accusantium molestias voluptate veritatis excepturi illo. Voluptas cum
-        mollitia repudiandae dolores delectus ratione amet nam eum praesentium laudantium, quisquam illum quasi non
-        sequi reprehenderit expedita eius eligendi. Tenetur, eligendi vitae.</p>
+        <p class="text-xl test-gray-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut atque deleniti quas
+            eum tempora perferendis
+            assumenda qui molestiae animi laboriosam, accusantium molestias voluptate veritatis excepturi illo. Voluptas cum
+            mollitia repudiandae dolores delectus ratione amet nam eum praesentium laudantium, quisquam illum quasi non
+            sequi reprehenderit expedita eius eligendi. Tenetur, eligendi vitae.</p>
+        <div>
+            <button class="px-3 py-3 rounded bg-blue-700 text-white hover:bg-blue-600">Click here</button>
+        </div>
 
-</div>
 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 </html>
